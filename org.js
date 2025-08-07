@@ -135,3 +135,209 @@ gsap.registerPlugin(ScrollTrigger);
         clickable: true,
       },
     });
+
+
+	// about us section 
+
+ gsap.from(".about-us .col-md-6:first-child img", {
+    scrollTrigger: {
+      trigger: ".about-us",
+      start: "top 60%", // Trigger when section center hits viewport center
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    scale: 0.85,
+    duration: 1.2,
+    ease: "power4.out"
+  });
+
+  // Animate heading
+  gsap.from(".about-us h2", {
+    scrollTrigger: {
+      trigger: ".about-us",
+      start: "top 60%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: -60,
+    duration: 1,
+    ease: "bounce.out",
+    delay: 0.2
+  });
+
+  // Animate paragraph texts with stagger
+  gsap.from(".about-us p", {
+    scrollTrigger: {
+      trigger: ".about-us",
+      start: "top 60%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 40,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    delay: 0.5
+  });
+
+//   products
+
+   // Animate product cards
+  gsap.from(".sec-1 .product-card", {
+    scrollTrigger: {
+      trigger: ".sec-1",
+      start: "top 60%", // When section top hits top of screen
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    stagger: {
+      amount: 1,
+      from: "start"
+    }
+  });
+
+  // Optional: Animate section heading
+  gsap.from(".sec-1 h2", {
+    scrollTrigger: {
+      trigger: ".sec-1",
+      start: "top 60%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: -30,
+    duration: 0.8,
+    ease: "power1.out",
+    delay: 0.2
+  });
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".hero-1", {
+  scrollTrigger: {
+    trigger: ".hero-1",
+    start: "top 60%",
+    toggleActions: "play none none none"
+  },
+  backgroundColor: "#ffffff", // from white
+  duration: 1.2,
+  ease: "power2.out"
+});
+   gsap.from(".hero-1 h2", {
+    scrollTrigger: {
+      trigger: ".hero-1",
+      start: "top 60%", // when top of section hits top of viewport
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  // Animate marquee logo slider
+  gsap.from(".hero-1 .wrapper", {
+    scrollTrigger: {
+      trigger: ".hero-1",
+      start: "top 60%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    scale: 0.95,
+    duration: 1.2,
+    ease: "power2.out",
+    delay: 0.3
+  });
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate heading
+  gsap.from(".customer-review-sec h2", {
+    scrollTrigger: {
+      trigger: ".customer-review-sec",
+      start: "top 60%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 60,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  // Animate Swiper review cards container
+  gsap.from(".customer-review-sec .swiper", {
+    scrollTrigger: {
+      trigger: ".customer-review-sec",
+      start: "top 60%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    scale: 0.95,
+    duration: 1.2,
+    ease: "power2.out",
+    delay: 0.3
+  });
+  
+   gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".swiper-slide", {
+    scrollTrigger: {
+      trigger: ".customer-review-sec",
+      start: "top 60%",
+    },
+    y: 50,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  // Animate "contact" section
+  gsap.from("#contact h2", {
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top 60%",
+    },
+    x: -50,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power2.out"
+  });
+
+  gsap.from("#contact .from-group", {
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top 85%",
+    },
+    x: 50,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from(".get-touch-details > div", {
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top 85%",
+    },
+    y: 30,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from(".social-media-imgs a", {
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top 85%",
+    },
+    scale: 0,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 0.8,
+    ease: "back.out(1.7)"
+  });
