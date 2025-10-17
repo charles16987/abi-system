@@ -84,7 +84,13 @@ header .logo {
     font-size: 26px;
     font-weight: 600 !important;
     color: #fff;
-    width:165px;
+}
+header .logo h3{
+    color: var(--primary--color);
+    font-weight: bold !important ;
+    margin: 0;
+    font-size: 26px !important;
+    margin-left: 15px;
 }
 section{
     padding: 55px 0px;
@@ -221,9 +227,9 @@ section{
 .product-card-max-width p{
     color: #535353;
 }
-.product-card img{
+/* .product-card img{
     max-width: 230px;
-}
+} */
 .product-card.border-right-none {
     border-right: none;
 }
@@ -826,7 +832,7 @@ input:focus {
 	}
 }
 .marquee__item img{
-    max-width: 90px;
+    max-width: 110px;
 }
 .marquee__item {
      display: flex;
@@ -894,3 +900,69 @@ input:focus {
         border-radius: 10px;
         border: 1px solid #242e6930;
     }
+  .serving-card {
+    /* padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #242e6930; */
+    text-align: center;
+  }
+    .serving-card img{
+        max-width: 50px;
+        margin-bottom: 15px;
+    }
+     .serving-card h4{
+        margin: 0;
+        font-size: 20px;
+        line-height: normal !important;
+     }
+
+
+     footer{
+    padding: 40px 0;
+    padding-top: 100px;
+    border-top: 1px solid #2b2b2b;
+        background-color: transparent;
+        border-radius: 40px 40px 0px 0px;
+    background-image: linear-gradient(180deg, #230e30 0%, var(--primary--color) 100%);
+}
+.copyrights {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #bfbfbf;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin-top: 15px;
+}
+footer h5{
+    color: #fff;
+}
+footer p {
+    color: #DCDCDC;
+    font-weight: 500;
+}
+footer .quick-links li a {
+    color: #DCDCDC !important;
+    font-weight: 500 !important;
+}
+.copyrights-border-top {
+    border-top: 1px solid #34439a;
+    padding-top: 15px;
+    margin-top: 50px !important;
+}
+.footer-logo h3{
+    color: #fff;
+    margin: 0;
+}
+.contact-us-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+.contact-us-container {
+    overflow: hidden;
+}

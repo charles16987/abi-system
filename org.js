@@ -341,3 +341,53 @@ gsap.registerPlugin(ScrollTrigger);
     duration: 0.8,
     ease: "back.out(1.7)"
   });
+
+
+   gsap.from(".serving-sec .serving-card", {
+    scrollTrigger: {
+      trigger: ".serving-sec",
+      start: "top 75%", // starts when section enters viewport
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
+
+  gsap.from(".serving-sec h2", {
+    scrollTrigger: {
+      trigger: ".serving-sec",
+      start: "top 75%",
+    },
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    ease: "power2.out"
+  });
+
+    gsap.from(".contact-us h2, .contact-us p, .contact-us .custom-btn", {
+    scrollTrigger: {
+      trigger: ".contact-us",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    x: -50,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
+
+  // Animate the image (right column)
+  gsap.from(".contact-us-container img", {
+    scrollTrigger: {
+      trigger: ".contact-us",
+      start: "top 80%"
+    },
+    opacity: 0,
+    x: 50,
+    duration: 1,
+    ease: "power2.out"
+  });
