@@ -391,3 +391,97 @@ gsap.registerPlugin(ScrollTrigger);
     duration: 1,
     ease: "power2.out"
   });
+
+   // Animate when the section enters viewport
+  ScrollTrigger.create({
+    trigger: ".contact-Us-abouts",
+    start: "top 80%",
+    once: true, // only trigger once
+    onEnter: () => {
+      // Left text column animation
+      gsap.from(".contact-Us-abouts .col-md-6:first-child", {
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      // Right image column animation
+      gsap.from(".contact-Us-abouts .col-md-6:last-child", {
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        delay: 0.3,
+        ease: "power2.out"
+      });
+    },
+  });
+   ScrollTrigger.create({
+    trigger: ".why-choose-us",
+    start: "top 70%",
+    once: true, // run only once
+    onEnter: () => {
+      // Animate heading and paragraph
+      gsap.from(".why-choose-us h2, .why-choose-us p", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.2
+      });
+
+      // Animate center image
+      gsap.from(".why-choose-us-center-img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power2.out"
+      });
+
+      // Animate all cards
+      gsap.from(".why-choose-us .card", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out",
+        stagger: 0.2
+      });
+    },
+  });
+
+    ScrollTrigger.create({
+    trigger: "footer",
+    start: "top 85%",
+    once: true,
+    onEnter: () => {
+      // Animate columns (fade up)
+      gsap.from("footer .col-md-4", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.3
+      });
+
+      // Animate social icons
+      gsap.from("footer .social-media li", {
+        opacity: 0,
+        scale: 0,
+        duration: 0.6,
+        delay: 0.8,
+        ease: "back.out(1.7)",
+        stagger: 0.2
+      });
+
+      // Animate bottom copyright section
+      gsap.from("footer .copyrights-border-top", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 1.2,
+        ease: "power2.out"
+      });
+    },
+  });

@@ -966,3 +966,65 @@ footer .quick-links li a {
 .contact-us-container {
     overflow: hidden;
 }
+.inner-banner {
+    background: var(--primary--color);
+    padding-top: 130px;
+}
+.why-choose-us-center-img {
+    width: 100%;
+}
+.why-choose-us-img-container  img{
+    max-width: 85%;
+    margin: auto;
+}
+.why-choose-us-cion img{
+    max-width: 40px;
+}
+.why-choose-us-cion {
+    height: 55px;
+    width: 55px;
+    background: var(--primary--color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-choose-us .card{
+    text-align: center;
+    align-items: center;
+}
+.contact-Us-abouts {
+    background: var(--primary--color);
+}
+.contact-Us-abouts h2 ,.contact-Us-abouts p ,.contact-Us-abouts .helights-text{
+    color: #fff !important;
+}
+.contact-Us-abouts .custom-btn {
+    color: var(--primary--color);
+    background: var(--white--color);
+    margin-top: 15px;
+    display: inline-block;
+}
+.contact-Us-abouts {
+    margin-top:30px ;
+}
+.contact-Us-abouts .contact-us-container-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contact-Us-abouts .contact-us-container-img img {
+    position: absolute;
+    bottom: -55px;
+    right: 20px;
+    width: 437px;
+}
+.statistics {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.statistics h2{
+    margin: 0;
+    
+}
