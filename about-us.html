@@ -351,35 +351,34 @@
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
-  ScrollTrigger.create({
-    trigger: ".statistics",
-    start: "top 80%",
-    once: true, // run only once
-    onEnter: () => {
-      // Animate fade + count-up for each number
-      document.querySelectorAll(".stat-number").forEach((el) => {
-        const target = parseInt(el.getAttribute("data-target")) || 0;
-        const obj = { val: 0 }; // start value
+ScrollTrigger.create({
+  trigger: ".statistics",
+  start: "top 80%",
+  once: true, // run only once
+  onEnter: () => {
+    // Animate fade + count-up for each number
+    document.querySelectorAll(".stat-number").forEach((el) => {
+      const target = parseInt(el.getAttribute("data-target")) || 0;
+      const obj = { val: 0 }; // start value
 
-        gsap.to(obj, {
-          val: target,
-          duration: 2, // count duration
-          ease: "power2.out",
-          onUpdate: () => {
-            el.textContent = Math.floor(obj.val); // update number
-          },
-        });
+      gsap.to(obj, {
+        val: target,
+        duration: 2, // count duration
+        ease: "power2.out",
+        onUpdate: () => {
+          el.textContent = Math.floor(obj.val) + "+"; // add '+' sign
+        },
       });
+    });
 
-      // Animate section fade-in
-      gsap.fromTo(
-        ".stat-box",
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }
-      );
-    },
-  });
-
+    // Animate section fade-in
+    gsap.fromTo(
+      ".stat-box",
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }
+    );
+  },
+});
     </script>
     <script>
        // Initialize Lenis with smooth scroll settings
