@@ -1028,3 +1028,9 @@ footer .quick-links li a {
     margin: 0;
     
 }
+.owl-carousel img{
+    border-radius: 20px;
+}
+.owl-carousel {
+    padding-right: 10px;
+}
