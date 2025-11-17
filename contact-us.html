@@ -92,11 +92,10 @@
         <div class="side-menu-close-btn">
           <img src="./images/close.png" alt="" />
         </div>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#products">Products</a></li>
+       <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a  href="about-us.html">About Us</a></li>
+          <li><a class="active" href="contact-us.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -270,49 +269,9 @@
     ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap-core.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/utils/ModularEase.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/ScrollSmoother.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/countup.js@2.6.2/dist/countUp.min.js"></script>
    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
     <script src="app.js"></script>
     <script src="org.js"></script>
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-
-  ScrollTrigger.create({
-    trigger: ".statistics",
-    start: "top 80%",
-    once: true, // run only once
-    onEnter: () => {
-      // Animate fade + count-up for each number
-      document.querySelectorAll(".stat-number").forEach((el) => {
-        const target = parseInt(el.getAttribute("data-target")) || 0;
-        const obj = { val: 0 }; // start value
-
-        gsap.to(obj, {
-          val: target,
-          duration: 2, // count duration
-          ease: "power2.out",
-          onUpdate: () => {
-            el.textContent = Math.floor(obj.val); // update number
-          },
-        });
-      });
-
-      // Animate section fade-in
-      gsap.fromTo(
-        ".stat-box",
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }
-      );
-    },
-  });
-
-    </script>
     <script>
        // Initialize Lenis with smooth scroll settings
       const lenis = new Lenis({

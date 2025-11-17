@@ -8,8 +8,17 @@
       yPercent: gsap.utils.wrap(-50, 0)
     }
   });
+gsap.to("#mobileview", {
+  xPercent: 100,
+  repeat: -1,
+  ease: "none",
+  duration: 12,
+  modifiers: {
+    xPercent: gsap.utils.wrap(-200, 0)
+  }
+});
 
-  // Loop scroll down
+  // Loop scroll down mobileview
   gsap.to("#loopDown", {
     yPercent: 100,
     repeat: -1,
@@ -134,6 +143,19 @@ gsap.registerPlugin(ScrollTrigger);
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+    // Mobile
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+
+    // Tablets (≥768px)
+    768: {
+      slidesPerView: 3.5,
+      spaceBetween: 25,
+    },
+  }
     });
 
 

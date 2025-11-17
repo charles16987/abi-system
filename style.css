@@ -171,7 +171,7 @@ section{
     display: none;
 }
 .menu_icon img{
-    max-width: 25px;
+    max-width: 22px;
 }
 .hero-sub-title {
     color: var(--white--color);
@@ -484,7 +484,6 @@ footer{
     @media (max-width: 768px) {
       .image-track {
         width: 100%;
-        opacity: 0.8;
       }
 
       .right-track {
@@ -1033,4 +1032,13 @@ footer .quick-links li a {
 }
 .owl-carousel {
     padding-right: 10px;
+}
+#mobileview {
+    display: none;
+}
+#loopUp {
+    display: block;
+}
+#loopDown {
+    display: block;
 }
