@@ -252,11 +252,11 @@ h4{
     justify-content: end !important;
 }
 .social_icons .icons {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
 }
 .fa-phone {
-    font-size: 14px !important;
+    font-size: 15.5px !important;
 }
 .social-media-fixed {
   position: fixed;
@@ -265,6 +265,7 @@ h4{
   display: block;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
 .social_icons .icons {
     background: #242e69;

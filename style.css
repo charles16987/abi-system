@@ -416,7 +416,7 @@ footer{
     color: var(--white--color)
 }
 .social_icons .icons i{
-    font-size: 20px;
+    font-size: 23px;
     color: #fff;
     transition: all 0.3s ease;
 }
