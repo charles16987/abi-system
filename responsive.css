@@ -267,7 +267,7 @@ h4{
   flex-direction: column;
 }
 .social_icons .icons {
-    background: #140c1c;
+    background: #242e69;
 }
 .banner-text .title {
     font-size: 26px;
@@ -391,6 +391,10 @@ footer {
 }
 .serving-card h4 {
     font-size: 17px;
+}
+.cctv-lens {
+  width: 60px;
+  height: 60px;
 }
 }
 	
