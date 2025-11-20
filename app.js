@@ -84,3 +84,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+  let p = 0;
+  let counter = setInterval(() => {
+    p++;
+    document.getElementById("percent").innerText = p + "%";
+
+    if (p >= 100) {
+      clearInterval(counter);
+
+      document.getElementById("preloader").style.transition = "0.7s ease";
+      document.getElementById("preloader").style.opacity = "0";
+
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+      }, 1000);
+    }
+  }, 0);
